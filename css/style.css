@@ -1,11 +1,15 @@
-body {
-  width: calc(100% - 400px);
-  position: relative;
+body, h1 {
+  margin: 0;
+}
+
+.wrapper {
+  border: dashed 1px red;
+  width: 80%;
   margin: auto;
-  min-width: fit-content;
 }
 
 .header {
+  border: dashed 1px red;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -13,7 +17,7 @@ body {
   line-height: 21px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  align-items: center;
 }
 
 .header__mobile {
@@ -34,9 +38,7 @@ body {
 }
 
 .header__logo {
-  width: 146px;
-  height: 32px;
-  margin-bottom: 246px;
+  padding: 40px 0;
 }
 
 .header__logo :hover {
@@ -44,11 +46,11 @@ body {
 }
 
 .nav__link {
-  margin-right: 24px;
+  padding: 0 13px;
 }
 
 .nav__link:last-child {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .burger {
@@ -56,11 +58,14 @@ body {
 }
 
 .section {
+  border: dashed 1px red;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 133px;
 }
 
 .main {
+  border: dashed 1px red;
   display: flex;
   flex-direction: column;
 }
@@ -108,14 +113,9 @@ body {
   opacity: 0.6;
 }
 
-.frame {
-  margin-bottom: 130px;
-}
-
-.frame__img {
-  display: block;
-  width: inherit;
-}
+/* .frame__img {
+  width: fit-content;
+} */
 
 .footer {
   display: flex;
