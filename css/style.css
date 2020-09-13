@@ -124,6 +124,8 @@ body {
   margin-bottom: 40px;
 }
 
+/* @media */
+
 @media (max-width: 1366px) {
   body {
     width: calc(100% - 100px);
@@ -155,7 +157,6 @@ body {
     font-size: 14px;
     line-height: 16px;
   }
-  .frame__img {}
   .frame {
     width: 514px;
     margin-bottom: 88px;
@@ -250,17 +251,17 @@ body {
     line-height: 35px;
   }
   .mobile {
-    margin: auto;
     display: flex;
     flex-direction: column;
+    margin: auto;
     min-width: 205px;
     max-width: 385px;
     margin-top: 24px;
   }
   .cross {
-    margin-bottom: 25%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 25%;
   }
   .cross:hover {
     opacity: .6;
