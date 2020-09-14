@@ -1,75 +1,69 @@
 body, h1 {
   margin: 0;
 }
-
 .wrapper {
-  border: dashed 1px red;
   width: 80%;
   margin: auto;
 }
-
 .header {
-  border: dashed 1px red;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.header__mobile {
-  display: none;
-}
-
 .header a {
   text-decoration: none;
   color: #000000;
 }
-
 .header a:hover {
-  text-decoration: none;
-  color: #000000;
   text-decoration: underline;
   text-decoration-color: #0056EC;
   text-decoration-style: solid;
 }
-
 .header__logo {
-  padding: 40px 0;
+  position: relative;
+  font: bold 24px/32px pt_serif arial helvetica sans-serif;
+  padding-left: 44px;
 }
-
 .header__logo :hover {
   opacity: 0.6;
 }
-
+.header__logo_circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.header__logo_circle_dark {
+  background: #0056EC;
+}
+.header__logo_circle_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
 .nav__link {
   padding: 0 13px;
 }
-
 .nav__link:last-child {
   padding-right: 0;
 }
-
 .burger {
   display: none;
 }
-
 .section {
-  border: dashed 1px red;
   display: flex;
   justify-content: space-between;
   margin-bottom: 133px;
 }
-
 .main {
-  border: dashed 1px red;
   display: flex;
   flex-direction: column;
 }
-
 .main__title {
   font-family: PT Serif;
   font-style: normal;
@@ -80,11 +74,9 @@ body, h1 {
   line-height: 87px;
   margin-bottom: 40px;
 }
-
 .colortext {
   background: #ECF3FF;
 }
-
 .main__text {
   font-family: Roboto;
   font-style: normal;
@@ -95,7 +87,6 @@ body, h1 {
   height: 52px;
   margin-bottom: 41px;
 }
-
 .main__button {
   font-family: Roboto;
   font-style: normal;
@@ -108,15 +99,9 @@ body, h1 {
   color: #FFFFFF;
   background: #0056EC;
 }
-
 .main__button:hover {
   opacity: 0.6;
 }
-
-/* .frame__img {
-  width: fit-content;
-} */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -191,12 +176,6 @@ body, h1 {
   .footer {
     display: none;
   }
-  .header__mobile {
-    display: block;
-  }
-  .header__mobile:hover {
-    opacity: 0.6;
-  }
   .burger {
     display: block;
     margin-bottom: 28px;
@@ -214,8 +193,8 @@ body, h1 {
     margin-bottom: 0;
   }
   .frame__img {
-    width: 90%;
-    height: 90%;
+    width: 280px;
+    height: 239px;
   }
   .main {
     display: flex;
@@ -254,8 +233,6 @@ body, h1 {
     display: flex;
     flex-direction: column;
     margin: auto;
-    min-width: 205px;
-    max-width: 385px;
     margin-top: 24px;
   }
   .cross {
