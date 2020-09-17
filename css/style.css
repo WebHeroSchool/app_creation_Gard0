@@ -16,7 +16,7 @@ body, h1 {
 
 .header__logo {
   position: relative;
-  font: bold 24px/32px pt_serif arial helvetica sans-serif;
+  font: 700 24px/32px pt_serif;
   padding-left: 44px;
 }
 
@@ -48,7 +48,7 @@ body, h1 {
 .nav__link {
   position: relative;
   margin-right: 26px;
-  font: 500 18px/21px roboto arial helvetica sans-serif;
+  font: 500 18px/21px roboto;
   text-decoration: none;
   color: #000;
 }
