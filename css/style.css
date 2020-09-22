@@ -163,7 +163,8 @@ body, h1, p {
 
 @media (max-width:950px) {
   .wrapper {
-    width: 375px;
+    width: 100%;
+    min-width: 300px;
   }
   .header {
     display: flex;
@@ -175,6 +176,8 @@ body, h1, p {
   }
   .section {
     display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .nav__link {
     display: none;
@@ -194,15 +197,16 @@ body, h1, p {
   .main__title {
     margin-bottom: 44px;
     font: bold 30px/40px pt_serif;
-    width: 267px;
+    width: 100%;
   }
   .main__text {
     margin-bottom: 44px;
     font: normal 16px/19px roboto;
-    width: 275px;
+    width: 100%;
   }
   .main__button {
     font: 500 14px/16px roboto;
-    width: 209px;
+    width: 74%;
+    max-width: 209px;
   }
 }
