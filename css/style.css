@@ -175,7 +175,8 @@ body, h1, p {
     display: none;
   }
   .section {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -189,7 +190,7 @@ body, h1, p {
   }
   .main {
     padding: 74% 0 0;
-    background-size: 74%;
+    background-size: 85%;
     background-position: top center;
     align-items: center;
     text-align: center;
