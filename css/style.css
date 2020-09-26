@@ -74,11 +74,11 @@ body, h1, p {
   left: 0;
   background: #0056EC;
   opacity: 0;
-  transition: opacity .3s, width .3s;
+  transition: opacity .5s, width .3s;
 }
 
 .nav__link:hover {
-  opacity: .6;
+  opacity: .5;
 }
 
 .nav__link:hover:after, .nav__link_active::after {
@@ -90,6 +90,20 @@ body, h1, p {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  opacity: 0;
+  transition: .5s;
+  animation: section 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes section {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main {
@@ -124,6 +138,20 @@ body, h1, p {
   color: #FFF;
   background: #0056EC;
   transition: opacity .5s;
+  opacity: 0;
+  transition: .5s;
+  animation: main__button 3s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes main__button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main__button:hover {
