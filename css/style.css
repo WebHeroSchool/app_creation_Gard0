@@ -1,5 +1,3 @@
-/* 1920px */
-
 body, h1, p {
   margin: 0;
 }
@@ -63,7 +61,7 @@ body, h1, p {
   margin-right: 0;
 }
 
-/* Underline effect on navigation */
+/* Underline effect*/
 
 .nav__link::after {
   position: absolute;
@@ -165,8 +163,6 @@ body, h1, p {
   align-items: flex-end;
   margin-bottom: 40px;
 }
-
-/* @media */
 
 @media (max-width: 1367px) {
   .nav__link {
