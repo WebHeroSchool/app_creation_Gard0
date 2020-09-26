@@ -1,16 +1,19 @@
 body, h1, p {
   margin: 0;
 }
+
 .main {
   padding-right: 63%;
   background: top right no-repeat url(img/frame.svg);
   background-size: 58%;
 }
+
 .wrapper {
   width: 80%;
   height: 100vh;
   margin: auto;
 }
+
 .header {
   padding: 40px 0;
   display: flex;
@@ -18,6 +21,7 @@ body, h1, p {
   align-items: center;
   margin-bottom: 100px;
 }
+
 .header__logo {
   position: relative;
   font: 700 24px/32px pt_serif;
@@ -25,6 +29,7 @@ body, h1, p {
   cursor: pointer;
   transition: opacity .5s;
 }
+
 .header__logo_circle {
   position: absolute;
   top: 50%;
@@ -35,17 +40,21 @@ body, h1, p {
   border-radius: 50%;
   opacity: .7;
 }
+
 .header__logo_circle_dark {
   background: #0056EC;
 }
+
 .header__logo_circle_blue {
   left: 8px;
   top: 56%;
   background: #C8DBFB;
 }
+
 .burger {
   display: none;
 }
+
 .nav__link {
   position: relative;
   margin-right: 26px;
@@ -53,10 +62,13 @@ body, h1, p {
   text-decoration: none;
   color: #000;
 }
+
 .nav__link:last-child {
   margin-right: 0;
 }
+
 /* Underline effect */
+
 .nav__link::after {
   position: absolute;
   display: block;
@@ -68,36 +80,43 @@ body, h1, p {
   opacity: 0;
   transition: opacity .5s, width .3s;
 }
+
 .nav__link:hover {
   opacity: .5;
 }
+
 .nav__link:hover:after, .nav__link_active::after {
   opacity: 1;
   width: 100%;
 }
+
 .section {
   display: flex;
   justify-content: space-between;
   height: 100%;
   opacity: 0;
-  transition: .5s;
+  transition: 1s;
   animation: section 3s 1;
   animation-fill-mode: forwards;
   animation-delay: 0;
 }
+
 .main__title {
   margin: 0 0 40px 0;
   font: bold 66px/88px pt_serif;
   width: 480px;
 }
+
 .main__title-text_highlight {
   background: #ECF3FF;
 }
+
 .main__text {
   width: 455px;
   margin: 0 0 41px 0;
   font: normal 22px/26px roboto;
 }
+
 .main__button {
   display: inline-block;
   text-align: center;
@@ -107,22 +126,25 @@ body, h1, p {
   border-radius: 4px;
   color: #FFF;
   background: #0056EC;
-  transition: opacity .3s;
+  transition: opacity 1s;
   opacity: 0;
   animation: main__button 3s 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
+
 .main__button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 40px;
 }
+
 @media (max-width: 1367px) {
   .nav__link {
     font: 600 14px/16px roboto;
@@ -139,8 +161,11 @@ body, h1, p {
     font: 500 14px/16px roboto;
   }
 }
+
 @media (max-width: 1170px) {}
+
 /* mobile */
+
 @media (max-width:950px) {
   .wrapper {
     width: 100%;
@@ -191,6 +216,7 @@ body, h1, p {
     max-width: 209px;
   }
 }
+
 @keyframes section {
   0% {
     opacity: 0;
@@ -199,6 +225,7 @@ body, h1, p {
     opacity: 1;
   }
 }
+
 @keyframes main__button {
   0% {
     opacity: 0;
