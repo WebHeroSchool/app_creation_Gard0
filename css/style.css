@@ -61,7 +61,7 @@ body, h1, p {
   margin-right: 0;
 }
 
-/* Underline effect*/
+/* Underline effect */
 
 .nav__link::after {
   position: absolute;
