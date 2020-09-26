@@ -3,7 +3,6 @@
     src: url('fonts/ptserif-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
 }
 
 @font-face {
@@ -11,5 +10,4 @@
     src: url('fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
 }
