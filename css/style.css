@@ -1,7 +1,11 @@
-/* 1920px */
-
 body, h1, p {
   margin: 0;
+}
+
+.main {
+  padding-right: 63%;
+  background: top right no-repeat url(img/frame.svg);
+  background-size: 58%;
 }
 
 .wrapper {
@@ -63,7 +67,7 @@ body, h1, p {
   margin-right: 0;
 }
 
-/* Underline effect on navigation */
+/* Underline effect */
 
 .nav__link::after {
   position: absolute;
@@ -91,25 +95,10 @@ body, h1, p {
   justify-content: space-between;
   height: 100%;
   opacity: 0;
-  transition: .5s;
+  transition: 1s;
   animation: section 3s 1;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-
-@keyframes section {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.main {
-  padding-right: 63%;
-  background: top right no-repeat url(img/frame.svg);
-  background-size: 58%;
+  animation-delay: 0;
 }
 
 .main__title {
@@ -137,21 +126,11 @@ body, h1, p {
   border-radius: 4px;
   color: #FFF;
   background: #0056EC;
-  transition: opacity .5s;
+  transition: opacity 1s;
   opacity: 0;
-  transition: .5s;
   animation: main__button 3s 1;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-
-@keyframes main__button {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-delay: 1s;
 }
 
 .main__button:hover {
@@ -165,8 +144,6 @@ body, h1, p {
   align-items: flex-end;
   margin-bottom: 40px;
 }
-
-/* @media */
 
 @media (max-width: 1367px) {
   .nav__link {
@@ -237,5 +214,23 @@ body, h1, p {
     font: 500 14px/16px roboto;
     width: 74%;
     max-width: 209px;
+  }
+}
+
+@keyframes section {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main__button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
